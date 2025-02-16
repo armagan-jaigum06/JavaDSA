@@ -11,6 +11,8 @@ public class Assignment {
         int c = sc.nextInt();
         int sum = (a + b + c);
         System.out.println("Average of the above number is : " + sum/3);
+        sc.close();
     }
+    
     
 }

@@ -14,5 +14,7 @@ public class Else_If {
             tax = (int) (income * 0.3);
         }
         System.out.println("Your tax Is : " + tax);
+        sc.close();
     }
+    
 }

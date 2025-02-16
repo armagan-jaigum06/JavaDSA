@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class syntaxParameters {
+public class SyntaxParameters {
 
     // Method to demonstrate syntax and parameters
     public static void exampleMethod() {
@@ -8,166 +8,119 @@ public class syntaxParameters {
         return;
     }
 
-    public static void printSum(int num1, int num2){
+    public static void printSum(int num1, int num2) {
         int sum = num1 + num2;
-        System.out.println("sum of the given number is " + sum);
+        System.out.println("Sum of the given numbers is " + sum);
     }
 
-    // swap
-
-    public static void swap(int a, int b){
+    // Swap
+    public static void swap(int a, int b) {
         int temp = a;
         a = b;
         b = temp;
-        System.out.println("A : " + a );
-        System.out.println("B : " + b );
+        System.out.println("A: " + a);
+        System.out.println("B: " + b);
     }
 
-    // multiply
-
-    public static int multiply(int a, int b){
+    // Multiply
+    public static int multiply(int a, int b) {
         int product = a * b;
         return product;
     }
-    // Factorial
 
-    public static int factorial(int n){
+    // Factorial
+    public static int factorial(int n) {
         int f = 1;
-        for(int i = 1 ;i <= n; i++){
-            f = f*i;
+        for (int i = 1; i <= n; i++) {
+            f = f * i;
         }
         return f;
     }
 
-    // Bionomial Coefficiant
-
-    public static int BioCoeff(int n, int r){
+    // Binomial Coefficient
+    public static int binomialCoeff(int n, int r) {
         int fact_n = factorial(n);
         int fact_r = factorial(r);
-        int fact_nmr = factorial(n-r);
-        int bio_coeff = fact_n / (fact_r * fact_nmr);
-        return bio_coeff;
+        int fact_nmr = factorial(n - r);
+        int binomialCoeff = fact_n / (fact_r * fact_nmr);
+        return binomialCoeff;
     }
 
-    // Func to calculate sum of 2 nums
-    
-    // public static int Sum(int a, int b){
-    //     return a + b;
-    // }
-
-    // Func to calculate sum of 3 nums
-
-    // public static int Sum(int a, int b, int c){
-    //     return a + b + c;
-    // }
-
-    // Func to calculate sum of 2 integer
-    
-    public static int Sum(int a, int b){
+    // Function to calculate sum of 2 integers
+    public static int sum(int a, int b) {
         return a + b;
     }
 
-    // Func to calculate sum of 2  flot
-
-    public static float Sum(float a, float b){
+    // Function to calculate sum of 2 floats
+    public static float sum(float a, float b) {
         return a + b;
     }
 
-    // Check Prime num or not for >= 2
-
-    // public static boolean isPrime(int n){
-    //     boolean isPrime = true;
-
-    //     if(n == 2){
-    //         return isPrime;
-    //     }
-
-
-    //     for(int i = 2; i <= n-1; i++){
-    //         if (n % i == 0) {
-    //             isPrime = false;
-    //             break;
-                
-    //         }
-    //     }
-    //     return isPrime;
-    // }
-
-    // Check Prime num or not for >= 2 optimised oproch here we take sqrt of n it run less code so is tpmised aproch
-
-    public static boolean isPrime(int n){
+    // Check if a number is prime
+    public static boolean isPrime(int n) {
         if (n == 2) {
-            return true;            
+            return true;
         }
-        for(int i = 2; i <= Math.sqrt(n); i++){
-            if(n % i == 0){
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
                 return false;
             }
         }
         return true;
     }
 
-    // Print All Primes in Range
-
-    public static void PrimesInRange(int n){
-        for(int i = 2 ; i<= n; i++){
-           if (isPrime(i)) {
-            System.out.print(i + " ");
-            
-           }
+    // Print all primes in range
+    public static void primesInRange(int n) {
+        for (int i = 2; i <= n; i++) {
+            if (isPrime(i)) {
+                System.out.print(i + " ");
+            }
         }
+        System.out.println();
     }
 
     // Binary to decimal converter
-
-    public static void BinToDec(int binNum){
+    public static void binToDec(int binNum) {
         int myNum = binNum;
         int pow = 0;
         int decNum = 0;
         while (binNum > 0) {
-            int lastDigt = binNum % 10;
-            decNum = decNum + lastDigt * ((int)Math.pow(2, pow));
+            int lastDigit = binNum % 10;
+            decNum = decNum + lastDigit * ((int) Math.pow(2, pow));
             pow++;
-            binNum = binNum/10;            
+            binNum = binNum / 10;
         }
-        System.out.print("Decimal of " + myNum + " is " + decNum);
+        System.out.println("Decimal of " + myNum + " is " + decNum);
     }
 
     // Decimal to binary converter
-
-    public static void DecToBin(int decNum){
+    public static void decToBin(int decNum) {
         int myNum = decNum;
         int pow = 0;
         int binNum = 0;
 
         while (decNum > 0) {
             int rem = decNum % 2;
-            binNum = binNum + rem * (int)Math.pow(10, pow);        
+            binNum = binNum + rem * (int) Math.pow(10, pow);
             pow++;
-            decNum = decNum/2;
+            decNum = decNum / 2;
         }
-        System.out.print("Binary of " + myNum + " is " + binNum);
-
+        System.out.println("Binary of " + myNum + " is " + binNum);
     }
 
     public static void main(String[] args) {
-        // int a = 5;
-        // int b = 3;
-        // // System.out.println(multiply(a, b));
-        // int factorial = factorial(3);
-        // System.out.println(factorial);
-
-        // System.out.println(BioCoeff(5,2));
-
-        // System.out.println(Sum(5,7));
-        // System.out.println(Sum(5.1f,7.9f));
-
-        // System.out.println(isPrime(3));
-        // PrimesInRange(20);
-
-        // BinToDec(1011);
-
-        DecToBin(5);
-        
+        // Example usage of methods
+        // exampleMethod();
+        // printSum(5, 3);
+        // swap(5, 3);
+        // System.out.println("Product: " + multiply(5, 3));
+        // System.out.println("Factorial: " + factorial(5));
+        // System.out.println("Binomial Coefficient: " + binomialCoeff(5, 2));
+        // System.out.println("Sum (int): " + sum(5, 7));
+        // System.out.println("Sum (float): " + sum(5.1f, 7.9f));
+        // System.out.println("Is Prime: " + isPrime(3));
+        // primesInRange(20);
+        // binToDec(1011);
+        decToBin(5);
     }
 }

@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class Arrays {
 
     public static void update(int marks[]){

@@ -11,5 +11,6 @@ public class Conditionals {
         } else {
             System.out.println("Given Number Is Odd");
         }
+        sc.close();
     }
 }

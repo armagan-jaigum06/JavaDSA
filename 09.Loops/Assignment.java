@@ -28,5 +28,6 @@ public class Assignment {
             System.out.println(num + " * " + i +" : " + (num*i));
 
         }
+        sc.close();
     }
 }  
