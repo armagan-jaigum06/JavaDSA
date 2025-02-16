@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class SyntaxParameters {
 
     // Method to demonstrate syntax and parameters
