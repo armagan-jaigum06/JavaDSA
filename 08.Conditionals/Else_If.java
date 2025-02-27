@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Else_If {
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your income In Lacs");
         int income = sc.nextInt();

@@ -60,7 +60,7 @@ public class maxSubArraySum {
         System.out.println("Our Max Sub Array Sum is : " + ms);
     }
 
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int num[] = {-2, -3, 4, -1, -2, 1, 5, -3};
         kadanes(num);
         

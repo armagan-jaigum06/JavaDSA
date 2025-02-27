@@ -9,7 +9,7 @@ public class largest {
         }
         return largest;
     }
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int number[] = {4, 9, 0, 2, 5, 10};
         int target = largestNumber(number);
        System.out.println("Largest Numbert is Available in the index of : " + target);

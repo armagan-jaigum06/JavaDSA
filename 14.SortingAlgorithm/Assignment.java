@@ -19,7 +19,7 @@ public class Assignment {
         System.out.println();
     }
     
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int arr[] = {3, 6, 2, 1, 8, 7, 4, 5, 3, 1};
         bubbleSort(arr);
         printArr(arr);

@@ -15,7 +15,7 @@ public class binarySearch {
         }
         return -1;
     }
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int number[] = {4, 9, 10, 20, 45, 80, 90};
         int key = 45;
         int binSer = binarySerch(number, key);

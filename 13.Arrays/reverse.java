@@ -11,7 +11,7 @@ public class reverse {
             end--;
         }
     }
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int number[] = {1, 2, 4, 7, 8, 9};
         reverseNum(number);
         for(int i = 0; i < number.length; i++){

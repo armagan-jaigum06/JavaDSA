@@ -181,7 +181,7 @@ public class Patterns {
             System.out.println();
         }
     }
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         // hollow_rectangle(4,6);
         // inverted_rotated_half_pyramid(9);
         // inverted_half_pyramid_num(6);

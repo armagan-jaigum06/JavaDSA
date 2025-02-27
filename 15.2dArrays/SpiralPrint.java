@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class SpiralPrint {
     
     public static void printSpiral(int matrix[][]){
@@ -42,7 +40,7 @@ public class SpiralPrint {
         System.out.println();
     }
     
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int matrix[][] = {{1, 2, 3, 4},
                           {5, 6, 7, 8},
                           {9, 10, 11, 12},

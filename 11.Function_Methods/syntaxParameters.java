@@ -106,7 +106,7 @@ public class SyntaxParameters {
         System.out.println("Binary of " + myNum + " is " + binNum);
     }
 
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         // Example usage of methods
         // exampleMethod();
         // printSum(5, 3);

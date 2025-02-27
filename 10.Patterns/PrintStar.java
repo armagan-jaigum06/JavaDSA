@@ -1,5 +1,5 @@
 public class PrintStar {
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
 
         // Print Star
 

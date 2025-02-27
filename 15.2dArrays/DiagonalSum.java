@@ -22,7 +22,7 @@ public class DiagonalSum {
         System.out.println("Diognal Sum of the Given Matrix is : " + sum);
     }
 
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int[][] matrix = {
             {1, 2, 3, 4},
             {5, 6, 7, 8},

@@ -1,5 +1,5 @@
 public class rverse {
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int n = 10899;
         int rev = 0;
 

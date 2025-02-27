@@ -70,7 +70,7 @@ public class BasicSorting {
         System.out.println();
     }
 
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int arr[] = {5, 4, 1, 3, 2};
         // bubbleSort(arr);
         // selectionSort(arr);

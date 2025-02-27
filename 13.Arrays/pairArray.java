@@ -11,7 +11,7 @@ public class pairArray {
         }
         System.out.println("Total numbers of pair : " + tp);
     }
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int num[] = {2, 4, 6, 8, 10, 12, 16};
         printPair(num);
         

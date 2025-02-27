@@ -5,7 +5,7 @@ public class Arrays {
         marks[i] += 1;
         }
     }
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int marks[] = {99, 59, 89};
         update(marks);
         for(int i = 0; i< marks.length; i++){

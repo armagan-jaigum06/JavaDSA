@@ -44,7 +44,7 @@ public class Assigment {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         int matrix[][] = {
             {4, 7, 8},
             {8, 8, 7}

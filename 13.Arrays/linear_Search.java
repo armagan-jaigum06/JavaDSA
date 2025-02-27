@@ -9,7 +9,7 @@ public class linear_Search {
         return -1;
     }
 
-    public static int foodSearch(String menu[], String key){
+    public static int foodSearch(myString menu[], myString key){
         for(int i = 0; i < menu.length; i++){
             if(menu[i].equals(key)){
                 return i;
@@ -18,7 +18,7 @@ public class linear_Search {
         return -1;
 
     }
-    public static void main(String[] args) {
+    public static void main(myString[] args) {
         // int number[] = {3, 6, 9, 2, 10, 8};
         // int key = 10;
         // int index = linearSearch(number, key);
@@ -28,8 +28,8 @@ public class linear_Search {
         //     System.out.println("Key is found At the Index of : " + index);
         // }
 
-        String menu[] = {"dosa", "idly", "rice", "biryani"};
-        String key = "biryani";
+        myString menu[] = {"dosa", "idly", "rice", "biryani"};
+        myString key = "biryani";
         int index = foodSearch(menu, key);
         if(index == -1){
             System.out.println("Key is not Found");
