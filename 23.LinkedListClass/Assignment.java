@@ -88,6 +88,47 @@ public class Assignment {
         return head;
     }
 
+    // Question 4
+
+    public static Node segregateEvenOdd(Node head){
+        if (head == null) {
+            return null;
+        }
+
+        Node evenHead = null, evenTail = null;
+        Node oddHead = null, oddTail = null;
+        Node current = head;
+
+        while (current != null) {
+            if (current.data % 2 == 0) {
+                if (evenHead == null) {
+                    evenHead = evenTail = current;
+                } else {
+                    evenTail.next = current;
+                    evenTail = evenTail.next;
+                }
+            } else {
+                if (oddHead == null) {
+                    oddHead = oddTail = current;
+                } else {
+                    oddTail.next = current;
+                    oddTail = oddTail.next;
+                }
+            }
+            current = current.next;
+        }
+        if (evenHead == null) {
+            return oddHead;
+        }
+        evenTail.next = oddHead;
+
+        if (oddTail != null) {
+            oddTail.next = null;
+        }
+        return evenHead;
+
+    }
+
     public static void printList(Node head){
         Node temp = head;
         while (temp != null) {
@@ -136,17 +177,35 @@ public class Assignment {
 
     // Problem 3
 
-        Node head = new Node(1);
-        head.next = new Node(2);
-        head.next.next = new Node(3);
-        head.next.next.next = new Node(4);
+        // Node head = new Node(1);
+        // head.next = new Node(2);
+        // head.next.next = new Node(3);
+        // head.next.next.next = new Node(4);
 
-        System.out.print("Original list: ");
+        // System.out.print("Original list: ");
+        // printList(head);
+
+        // head = swapNodes(head, 2, 4);
+
+        // System.out.print("List after swapping 2 and 4: ");
+        // printList(head);
+
+        // Problem 4
+
+        Node head = new Node(8);
+        head.next = new Node(12);
+        head.next.next = new Node(10);
+        head.next.next.next = new Node(5);
+        head.next.next.next.next = new Node(4);
+        head.next.next.next.next.next = new Node(1);
+        head.next.next.next.next.next.next = new Node(6);
+
+        System.out.print("Original List : ");
         printList(head);
 
-        head = swapNodes(head, 2, 4);
+        segregateEvenOdd(head);
 
-        System.out.print("List after swapping 2 and 4: ");
+        System.out.print("rearranged List : ");
         printList(head);
     }
 }
